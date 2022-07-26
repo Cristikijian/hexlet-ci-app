@@ -13,12 +13,14 @@ jobs:
       
       - name: setup
         run: make setup
+        
+      - name: lint
+        run: make lint
+        
+      - name: test
+        run: make test
 
       - name: start
         run: make start
         
-      - name: test
-        run: make test
-        
-      - name: lint
-        run: make lint
+      
